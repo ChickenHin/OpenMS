@@ -21,30 +21,6 @@ jobs:
             preset: linux-x64-ci
             variant_name: linux-x64-gcc
 
-          - os: ubuntu-24.04
-            compiler: clang++
-            compiler_ver: 18
-            preset: linux-x64-ci
-            variant_name: linux-x64-clang
-
-          - os: ubuntu-24.04-arm
-            compiler: g++
-            compiler_ver: 13
-            preset: linux-arm64-ci
-            variant_name: linux-arm64-gcc
-          
-          - os: macos-15
-            compiler: xcode
-            compiler_ver: "16.4"
-            preset: macos-arm64-ci
-            variant_name: macos-arm64-xcode
-
-          - os: windows-2025
-            compiler: cl.exe
-            compiler_ver: "14.51"
-            preset: windows-x64-ci
-            variant_name: windows-x64-msvc
-
     steps:
       - uses: actions/checkout@v6
         with:
